@@ -1,0 +1,12 @@
+## Add item to path
+PATH=$PATH:"~/todo.txt"
+
+## makes t work like todo.sh
+alias t='todo.sh -d ~/todo.txt/todo.cfg'
+
+## Auto complete for todo.sh followed by alias
+source ~/todo.txt/todo_completion
+complete -F _todo t
+
+## Make the ls the default when you type t
+export TODOTXT_DEFAULT_ACTION=ls
