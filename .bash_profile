@@ -25,5 +25,5 @@ function jek() { bundle exec jekyll "$@"; }
 # command for installing laravel (I don't like their global installer/downloader)
 function laravel() {
   echo "Creating Laravel project in ${PWD}/$1"
-  composer create-project --prefer-dist laravel/laravel $1
+  composer create-project aaronsaray/laravel-boot $1
 }
